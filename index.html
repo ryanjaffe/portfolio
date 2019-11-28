@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Domine|Roboto&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
@@ -32,43 +34,64 @@
         <section>
             <h2>About Me</h2>
             <hr>
-            <p>
-                I am a developer currently enrolled in the Thinkful 
-                Engineering bootcamp.  I am driven to make projects 
-                accessible and fun so they can be enjoyed by everyone.  
-                Learning to use new technologies excites me.  I see 
-                every project as a puzzle waiting to be solved and love 
-                the thrill of completing them.
-            </p>
-
-            <p>
-                If I’m not coding, I’m probably cooking or crafting a 
-                cocktail to share with friends and family.  I also bartend 
-                professionally on occasion.  I like to read (I’m a sucker 
-                for Stephen King) and exercise in my free time.
-            </p>
+                <section class="flex-container">
+                    <section>
+                        <p>
+                            I am a developer currently enrolled in the Thinkful 
+                            Engineering bootcamp.  I am driven to make projects 
+                            accessible and fun so they can be enjoyed by everyone.  
+                            Learning to use new technologies excites me.  I see 
+                            every project as a puzzle waiting to be solved and love 
+                            the thrill of completing them.  I look forward to working 
+                            on a team with great programmers.
+                        </p>
+                
+                        <p>
+                            If I’m not coding, I’m probably cooking or crafting a 
+                            cocktail to share with friends and family.  I also bartend 
+                            professionally on occasion.  I like to read (I’m a sucker 
+                            for Stephen King) and exercise in my free time.
+                        </p>
+                    </section>
+                    <section>
+                        <img src="images\ryan-jaffe-picture.jpg" class="portrait" alt="Picture of Ryan Jaffe">
+                    </section>
+                </section>
         </section>
         
         <section>
             <h2>Projects</h2>
             <hr>
-            <img class="screenshot" src="images\rick-and-morty-quiz-screenshot.jpg" 
-                alt="A screenshot of the app.">
-
+            <section class="flex-container">
                 <section>
-                    <h3>Rick & Morty Quiz App</h3>
-                    <p>This is a mobile first responsive quiz app meant to demonstrate 
-                        accessibility best practices as well as create a little fun for 
-                        fans of the TV show (one of my favorite shows).
-                    </p>
+                    <img class="screenshot" src="images\rick-and-morty-quiz-screenshot.jpg" 
+                    alt="A screenshot of the app.">
                 </section>
-                <section>
-                    <p>Technology Used</p>
-                    <img src="images\html-logo.png" alt="HTML5 logo">
-                    <img src="images\css-logo.png" alt="CSS3 logo">
-                    <img src="images\js-logo.png" alt="JavaScript logo">
-                    <img src="images\jquery-logo.png" alt="jQuery logo">
+                <section class="project-column">
+                    <section>
+                        <h3 class="project-title">
+                            Rick & Morty Quiz App
+                        </h3>
+                        <p class="project-description">
+                            This is a mobile first responsive quiz app meant to demonstrate 
+                            accessibility best practices as well as create a little fun for 
+                            fans of the TV show (one of my favorite shows).
+                        </p>
+                    </section>
+                    <section class="technologies">
+                        <h3>Technology Used</h3>
+                        <img src="images\html5-icon.png" class="icon-styles" alt="HTML5">
+                        <img src="images\css-icon.png" class="icon-styles" alt="CSS3 icon">
+                        <img src="images\js-icon.png" class="icon-styles" alt="JavaScript icon">
+                        <img src="images\jquery-icon.png" class="icon-styles" alt="jQuery icon">
+                    </section>
+                    <section class="visit-project flex-container">
+                        <a href="https://github.com/ryanjaffe/quiz-app">VISIT REPO</a>
+                        <a href="https://ryanjaffe.github.io/quiz-app/">USE APP</a>
+                    </section>
                 </section>
+    
+            </section>
         </section>
 
     </main>
@@ -76,14 +99,18 @@
     <footer role="contentinfo">
         <ul>
             <li>
-                Reach out at: <a href="mailto:ryancjaffe@gmail.com">email</a>
+                Reach out at: <a href="mailto:ryancjaffe@gmail.com"><i class="far fa-envelope"></i></a>
             </li>  
             <li>
-                <a href="https://www.linkedin.com/in/ryan-jaffe-49567493/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/ryan-jaffe-49567493/"><i class="fab fa-linkedin-in"></i></a>
             </li>
             <li>
-                <a href="https://twitter.com/RyanCJaffe1">twitter</a>
+                <a href="https://twitter.com/RyanCJaffe1"><i class="fab fa-twitter-square"></i></a>
             </li>
+            <li>
+                <a href="https://github.com/ryanjaffe"><i class="fab fa-github"></i></a>
+            </li>
+
         </ul>
     </footer>
 
