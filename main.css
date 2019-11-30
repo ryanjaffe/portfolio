@@ -299,10 +299,26 @@ main p{
 }
 
 .flex-container{
+    display: flex;
+    flex-direction: row;
     max-width: 95%;
 }
 
+.project-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.portrait{     
+    display: inline-block;
+    width: 60%;
+    margin-top: 30px;
+}
+
 .screenshot{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 20px;
 }
 
@@ -318,5 +334,26 @@ main p{
 
 .technologies{
     margin-top: 30px;
+}
+
+.technologies h3{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.icon-styles{
+    width: 23%;
+}
+
+.visit-project a{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+footer{
+    font-size: 24px;
 }
 }
