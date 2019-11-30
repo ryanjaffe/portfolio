@@ -275,6 +275,13 @@ footer{
     font-size: 40px;
 }
 
+.nav-my-name{
+    display: inline-block;
+    position: relative;
+    left: 25px;
+    font-size: 24px;
+}
+
 h1{
     font-size: 48px;
 }
